@@ -1,0 +1,15 @@
+# Ignored directories
+.storybook/public
+.vscode
+.yarn
+coverage
+dist
+node_modules
+
+# Ignored files
+.eslintignore
+.gitignore
+.nvmrc
+.prettierignore
+.yarnrc.yml
+yarn.lock
