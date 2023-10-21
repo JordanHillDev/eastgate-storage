@@ -3094,6 +3094,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/addon-styling-webpack@npm:0.0.5":
+  version: 0.0.5
+  resolution: "@storybook/addon-styling-webpack@npm:0.0.5"
+  dependencies:
+    "@storybook/node-logger": ^7.0.12
+  peerDependencies:
+    webpack: ^5.0.0
+  checksum: 43462f6b05b660f9e6a8d70640efeedfaad314ebe65d7a172d84213c9ff9f1f78d69ec5d242914ea704ec6ae9c4fc12cf0a7130d10d29367397e5e2babe2b2ed
+  languageName: node
+  linkType: hard
+
 "@storybook/addon-toolbars@npm:7.4.6":
   version: 7.4.6
   resolution: "@storybook/addon-toolbars@npm:7.4.6"
@@ -3701,6 +3712,13 @@ __metadata:
   version: 7.4.6
   resolution: "@storybook/node-logger@npm:7.4.6"
   checksum: e9e95604640ed5295532137b229221c3180c9505960833d0b4c8209ac824591ed6fb16e48d1692c0e27817e2b83dd07fd25380aa428e5cd379003f4a792ae034
+  languageName: node
+  linkType: hard
+
+"@storybook/node-logger@npm:^7.0.12":
+  version: 7.5.1
+  resolution: "@storybook/node-logger@npm:7.5.1"
+  checksum: 8c476e49a1ec19adba4c532476d4e5ccf58c8be16f7b70064a127f86a5d8bcf5c5bb947f18b0cb10c59cf3143b1f832379797009071ead5a586060afe9158760
   languageName: node
   linkType: hard
 
@@ -6451,7 +6469,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:^6.7.1, css-loader@npm:^6.7.3":
+"css-loader@npm:^6.7.1, css-loader@npm:^6.7.3, css-loader@npm:^6.8.1":
   version: 6.8.1
   resolution: "css-loader@npm:6.8.1"
   dependencies:
@@ -6924,6 +6942,7 @@ __metadata:
     "@storybook/addon-interactions": 7.4.6
     "@storybook/addon-links": 7.4.6
     "@storybook/addon-onboarding": 1.0.8
+    "@storybook/addon-styling-webpack": 0.0.5
     "@storybook/blocks": 7.4.6
     "@storybook/nextjs": 7.4.6
     "@storybook/react": 7.4.6
@@ -6932,6 +6951,7 @@ __metadata:
     "@types/react": ^18
     "@types/react-dom": ^18
     autoprefixer: ^10
+    css-loader: ^6.8.1
     eslint: 8.2.0
     eslint-config-airbnb: 19.0.4
     eslint-config-airbnb-typescript: ^17.1.0
@@ -6945,10 +6965,12 @@ __metadata:
     eslint-plugin-storybook: ^0.6.15
     next: 13.5.5
     postcss: ^8
+    postcss-loader: ^7.3.3
     prettier: ^3.0.3
     react: ^18
     react-dom: ^18
     storybook: 7.4.6
+    style-loader: ^3.3.3
     tailwindcss: ^3
     typescript: ^5
   languageName: unknown
@@ -11438,7 +11460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-loader@npm:^7.0.2":
+"postcss-loader@npm:^7.0.2, postcss-loader@npm:^7.3.3":
   version: 7.3.3
   resolution: "postcss-loader@npm:7.3.3"
   dependencies:
@@ -13068,7 +13090,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"style-loader@npm:^3.3.1":
+"style-loader@npm:^3.3.1, style-loader@npm:^3.3.3":
   version: 3.3.3
   resolution: "style-loader@npm:3.3.3"
   peerDependencies:
