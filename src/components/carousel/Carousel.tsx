@@ -8,34 +8,78 @@ type CarouselProps = {
   images: CarouselImage[];
 };
 
+const styles = {
+  carouselButton: `
+  absolute 
+  top-0 
+  z-10 
+  flex 
+  items-center 
+  justify-center 
+  h-full 
+  px-4 
+  cursor-pointer 
+  group 
+  focus:outline-none`,
+  arrowContainer: `
+  inline-flex 
+  items-center 
+  justify-center 
+  w-10 h-10 
+  rounded-full 
+  bg-white/30 
+  group-hover:bg-white/50 
+  group-focus:ring-4 
+  group-focus:ring-white 
+  group-focus:outline-none`,
+  arrow: `
+  w-4 
+  h-4 
+  text-white 
+  `,
+};
+
 export default function Carousel({ images }: CarouselProps) {
   const [currSlide, setCurrSlide] = useState(0);
 
+  const handleNextSlide = () => {
+    let newSlide = currSlide === images.length - 1 ? 0 : currSlide + 1;
+    setCurrSlide(newSlide);
+  };
+
+  const handlePrevSlide = () => {
+    let newSlide = currSlide === 0 ? images.length - 1 : currSlide - 1;
+    setCurrSlide(newSlide);
+  };
+
   return (
-    <div id="default-carousel" className="relative w-full" data-carousel="slide">
+    <div id="default-carousel" className="relative w-full max-w-3xl mt-20" data-carousel="slide">
       {/* <!-- Carousel wrapper --> */}
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-        {images.map((ea) => (
-          <div key={ea.img.src} className="duration-700 ease-in-out" data-carousel-item>
-            <Image
-              src={ea.img.src}
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt={ea.alt}
-              width={1200}
-              height={500}
-            />
-          </div>
-        ))}
+      <div className="relative h-56 overflow-hidden md:h-96">
+        <div>
+          <Swipe onSwipeLeft={handleNextSlide} onSwipeRight={handlePrevSlide}>
+            {images.map((ea, i) => {
+              if (i === currSlide) {
+                return (
+                  <Image
+                    key={ea.img.src}
+                    src={ea.img.src}
+                    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
+                    alt={ea.alt}
+                    height={200}
+                    width={400}
+                  />
+                );
+              }
+            })}
+          </Swipe>
+        </div>
       </div>
       {/* <!-- Slider controls --> */}
-      <button
-        type="button"
-        className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev
-      >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <button type="button" className={`${styles.carouselButton} left-0`} data-carousel-prev onClick={handlePrevSlide}>
+        <span className={styles.arrowContainer}>
           <svg
-            className="w-4 h-4 text-white dark:text-gray-800"
+            className={styles.arrow}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -46,14 +90,10 @@ export default function Carousel({ images }: CarouselProps) {
           <span className="sr-only">Previous</span>
         </span>
       </button>
-      <button
-        type="button"
-        className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next
-      >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <button type="button" className={`${styles.carouselButton} right-0`} data-carousel-next onClick={handleNextSlide}>
+        <span className={styles.arrowContainer}>
           <svg
-            className="w-4 h-4 text-white dark:text-gray-800"
+            className={styles.arrow}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

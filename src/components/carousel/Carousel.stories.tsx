@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import image from "../../images/storage1.jpg";
+import { carouselImages } from "@/global/constants/carouselImages";
 import { Carousel } from ".";
 
 const meta = {
@@ -15,6 +15,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Baseline: Story = {
   args: {
-    images: [image],
+    images: carouselImages,
   },
 };
