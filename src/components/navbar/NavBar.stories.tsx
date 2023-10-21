@@ -8,7 +8,6 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   decorators: [
     (Story) => (
       <div style={{ height: "200vh" }}>

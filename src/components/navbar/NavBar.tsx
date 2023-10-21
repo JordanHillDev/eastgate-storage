@@ -129,7 +129,7 @@ export default function NavBar() {
     <nav className={styles.nav}>
       <div className={styles.navContainer}>
         <a href="https://flowbite.com/" className="flex items-center">
-          <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
+          {/* <img src="eastGateLogo1.png" className="h-16 mr-3" alt="Flowbite Logo" /> */}
           <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Eastgate Storage</span>
         </a>
         <div className="flex md:order-2">

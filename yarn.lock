@@ -6969,6 +6969,7 @@ __metadata:
     prettier: ^3.0.3
     react: ^18
     react-dom: ^18
+    react-easy-swipe: ^0.0.23
     storybook: 7.4.6
     style-loader: ^3.3.3
     tailwindcss: ^3
@@ -11660,7 +11661,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.8, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -11910,6 +11911,15 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
+  languageName: node
+  linkType: hard
+
+"react-easy-swipe@npm:^0.0.23":
+  version: 0.0.23
+  resolution: "react-easy-swipe@npm:0.0.23"
+  dependencies:
+    prop-types: ^15.5.8
+  checksum: 20d43a6e0a5d6a2ba19711a9be22234e387a1d2c07d3a509a1079449f01b50271ebc19bac3a6995a226e813e5498c7272fbb39c5891750ff7a7f91ec6df384c1
   languageName: node
   linkType: hard
 
