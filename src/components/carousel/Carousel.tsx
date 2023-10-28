@@ -53,7 +53,7 @@ export default function Carousel({ images }: CarouselProps) {
   };
 
   return (
-    <div id="default-carousel" className="relative w-full max-w-3xl mt-20" data-carousel="slide">
+    <div id="default-carousel" className="relative w-full max-w-3xl" data-carousel="slide">
       {/* <!-- Carousel wrapper --> */}
       <div className="relative h-56 overflow-hidden md:h-96">
         <div>
