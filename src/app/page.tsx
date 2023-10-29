@@ -1,15 +1,11 @@
-import { Carousel } from "@/components/carousel";
-import { NavBar } from "@/components/navbar";
-import Image from "next/image";
-import { carouselImages } from "@/global/constants/carouselImages";
-import { Map } from "@/components/map";
 import { Hero } from "@/components/hero";
+import { Location } from "@/components/location";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-gray-900">
+    <main className="flex min-h-screen flex-col items-center bg-background">
       <Hero />
-      <Map />
+      <Location />
     </main>
   );
 }

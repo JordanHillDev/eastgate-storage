@@ -68,6 +68,7 @@ export default function Carousel({ images }: CarouselProps) {
                     alt={ea.alt}
                     height={200}
                     width={400}
+                    priority
                   />
                 );
               }
