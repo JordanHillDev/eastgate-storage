@@ -5,7 +5,8 @@ const styles = {
   bg-background
   w-full
   md:max-w-screen-md
-  lg:max-w-screen-xl`,
+  lg:max-w-screen-xl
+  mt-auto`,
   grid: `
   grid 
   max-w-screen-xl
@@ -20,8 +21,7 @@ const styles = {
   address: `
   col-span-5
   text-4xl 
-  font-extrabold 
-  tracking-tight  
+  font-extrabold   
   md:text-5xl 
   xl:text-6xl 
   text-text_primary`,
