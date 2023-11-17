@@ -158,12 +158,12 @@ export default function NavBar() {
         <div className={`${styles.dropdown} ${dropdownShowing ? "" : "hidden"}`} ref={navRef}>
           <ul className={styles.navList}>
             <li>
-              <a href="#" className={styles.navLink} aria-current="page">
+              <a href="#home" className={styles.navLink} aria-current="page">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className={styles.navLink}>
+              <a href="#about" className={styles.navLink}>
                 About
               </a>
             </li>

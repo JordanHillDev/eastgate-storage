@@ -15,6 +15,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Baseline: Story = {
   args: {
-    images: carouselImages,
+    images: [],
   },
 };

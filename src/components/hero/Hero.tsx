@@ -75,7 +75,7 @@ const styles = {
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="home">
       <div className={styles.grid}>
         <div className={styles.textContainer}>
           <h1 className={styles.header}>Storage for all of your storage needs</h1>
