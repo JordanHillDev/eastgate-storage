@@ -27,14 +27,14 @@ const styles = {
   `,
   header: `
   max-w-2xl 
-  mb-4 
+  mb-4
   text-4xl 
   font-extrabold 
   tracking-tight 
   leading-none 
   md:text-5xl 
   xl:text-6xl 
-  text-white
+  text-text_primary
   pt-5
   lg:pt-0
   xl:pt-0
@@ -46,7 +46,8 @@ const styles = {
   lg:mb-8 
   md:text-lg 
   lg:text-xl 
-  text-gray-400
+  text-text_secondary
+  leading-snug
   `,
   button: `
   inline-flex 
@@ -78,10 +79,13 @@ export default function Hero() {
     <section className={styles.hero} id="home">
       <div className={styles.grid}>
         <div className={styles.textContainer}>
-          <h1 className={styles.header}>Storage for all of your storage needs</h1>
+          <h1 className={styles.header}>
+            Your <span className="text-primary_light">Trusted</span> <br />
+            Self Storage<span className="text-primary_light"> Solution</span>
+          </h1>
           <p className={styles.subHeader}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ex, alias suscipit voluptate veniam placeat
-            at inventore possimus? Possimus, maiores.
+            Providing you with a reliable, secure, and convenient self-storage facility that caters to all your storage
+            needs.
           </p>
           <a href="#" className={styles.button}>
             Get started
