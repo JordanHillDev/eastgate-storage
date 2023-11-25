@@ -75,7 +75,7 @@ export default function Contact() {
           Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let
           us know.
         </p>
-        <form name="contact" method="POST" data-netlify="true" className="space-y-8" action="#">
+        <form name="contact" method="POST" data-netlify="true" className="space-y-8" action="/">
           <input type="hidden" name="form-name" value="contact" />
           <div>
             <label htmlFor="name" className={styles.formLabel}>
