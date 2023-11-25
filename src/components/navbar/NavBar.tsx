@@ -1,31 +1,27 @@
 "use client";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
+import eastgateLogo from "/public/eastgateLogo1.png";
 
 const styles = {
   nav: `
-  bg-background 
+  bg-white
   fixed 
-  w-full 
+  w-full
+  px-4 
   z-20 
   top-0 
   left-0 
   border-b 
-  border-text_secondary 
-  dark:border-gray-600`,
+  border-gray-200`,
   navContainer: `
   max-w-screen-xl 
-  flex flex-wrap 
+  flex 
+  flex-wrap 
   items-center 
   justify-between 
   mx-auto 
-  p-4`,
-  logoName: `
-  self-center 
-  text-xl 
-  font-semibold 
-  whitespace-nowrap 
-  text-text_primary 
-  hover:text-primary_light`,
+  p-1`,
   button: `
   text-white 
   bg-primary 
@@ -58,12 +54,12 @@ const styles = {
   dark:border-gray-700`,
   navLink: `
   block 
-  py-2 pl-3 pr-4 
-  text-gray-900 
+  py-2 
+  px-4 
   rounded 
-  hover:text-primary_light
   md:p-0 
-  text-text_primary
+  text-primary
+  hover:text-primary_light
   `,
   hamburger: `
   inline-flex 
@@ -80,8 +76,7 @@ const styles = {
   focus:outline-none 
   focus:ring-2 
   focus:ring-gray-200 
-  dark:hover:bg-gray-700 
-  dark:focus:ring-gray-600`,
+  `,
   dropdown: `
   items-center 
   justify-between 
@@ -122,14 +117,13 @@ export default function NavBar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.navContainer}>
-        <a href="#" className="flex items-center">
-          {/* <img src="eastGateLogo1.png" className="h-16 mr-3" alt="Flowbite Logo" /> */}
-          <span className={styles.logoName}>Eastgate Storage</span>
+        <a href="/">
+          <Image alt="Eastgate Storage Logo" src={eastgateLogo} width={150} />
         </a>
         <div className="flex md:order-2">
-          <button type="button" className={styles.button}>
+          {/* <button type="button" className={styles.button}>
             Call Now
-          </button>
+          </button> */}
           <button
             type="button"
             className={styles.hamburger}
@@ -173,7 +167,7 @@ export default function NavBar() {
               </a>
             </li>
             <li>
-              <a href="#" className={styles.navLink}>
+              <a href="#contact" className={styles.navLink}>
                 Contact
               </a>
             </li>

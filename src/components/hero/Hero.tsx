@@ -12,7 +12,8 @@ const styles = {
   grid: `
   grid 
   max-w-screen-xl 
-  px-4 
+  px-0
+  lg:px-4
   py-8 
   mx-auto 
   lg:gap-8 
@@ -21,6 +22,8 @@ const styles = {
   `,
   textContainer: `
   mr-auto
+  px-4
+  md:px-0
   pr-10 
   place-self-center 
   lg:col-span-7
@@ -67,9 +70,9 @@ const styles = {
   dark:focus:ring-primary-900
   `,
   carousel: `
+  mt-16
   lg:mt-0 
   col-span-5
-  order-first
   lg:order-last
   `,
 };

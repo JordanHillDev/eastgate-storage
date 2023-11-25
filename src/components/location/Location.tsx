@@ -62,7 +62,11 @@ export default function Location() {
             <span> </span>
             <span itemProp="postalCode">37862</span>
           </p>
-          <a href="tel:+18655910610" itemProp="telephone" className={`${styles.addressItem} mt-4`}>
+          <a
+            href="tel:+18655910610"
+            itemProp="telephone"
+            className="text-primary_light text-sm hover:text-text_primary"
+          >
             (865)-365-1798
           </a>
           <p itemProp="description" className="mt-8 mb-2 text-lg underline">
