@@ -81,19 +81,19 @@ export default function Contact() {
             <label htmlFor="name" className={styles.formLabel}>
               Name
             </label>
-            <input type="name" id="name" className={styles.formInput} required />
+            <input type="name" name="Name" id="name" className={styles.formInput} required />
           </div>
           <div>
             <label htmlFor="email" className={styles.formLabel}>
               Email
             </label>
-            <input type="email" id="email" className={styles.formInput} required />
+            <input type="email" name="Email" id="email" className={styles.formInput} required />
           </div>
           <div>
             <label htmlFor="phoneNumber" className={styles.formLabel}>
               Phone Number
             </label>
-            <input type="text" id="phoneNumber" className={styles.formInput} required />
+            <input type="text" name="Phone Number" id="phoneNumber" className={styles.formInput} required />
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="message" className={styles.formLabel}>
@@ -101,6 +101,7 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
+              name="Message"
               rows={6}
               className={styles.formInput}
               placeholder="Let us know how we can help"
