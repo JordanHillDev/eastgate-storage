@@ -2,12 +2,14 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import eastgateLogo from "/public/eastgateLogo1.png";
+import { NAV_HEIGHT } from "@/global/constants/navHeight";
 
 const styles = {
   nav: `
   bg-white
   fixed 
   w-full
+  
   px-4 
   z-20 
   top-0 
@@ -115,7 +117,7 @@ export default function NavBar() {
   });
 
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.nav} style={{ height: NAV_HEIGHT }}>
       <div className={styles.navContainer}>
         <a href="/">
           <Image alt="Eastgate Storage Logo" src={eastgateLogo} width={150} />

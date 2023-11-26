@@ -1,3 +1,4 @@
+import { NAV_HEIGHT } from "@/global/constants/navHeight";
 import { Carousel } from "../carousel";
 import { carouselImages } from "@/global/constants/carouselImages";
 
@@ -5,16 +6,12 @@ const styles = {
   hero: `
   bg-background 
   pt-0
-  sm:pt-20
-  md:pt-20
-  lg:pt-20
-  xl:pt-20`,
+  `,
   grid: `
   grid 
   max-w-screen-xl 
   px-0
-  lg:px-4
-  py-8 
+  lg:px-4 
   mx-auto 
   lg:gap-8 
   xl:gap-0 
@@ -70,16 +67,16 @@ const styles = {
   dark:focus:ring-primary-900
   `,
   carousel: `
-  mt-16
   lg:mt-0 
   col-span-5
+  order-first
   lg:order-last
   `,
 };
 
 export default function Hero() {
   return (
-    <section className={styles.hero} id="home">
+    <section className={styles.hero} id="home" style={{ paddingTop: NAV_HEIGHT }}>
       <div className={styles.grid}>
         <div className={styles.textContainer}>
           <h1 className={styles.header}>
@@ -90,7 +87,7 @@ export default function Hero() {
             Providing you with a reliable, secure, and convenient self-storage facility that caters to all your storage
             needs.
           </p>
-          <a href="#" className={styles.button}>
+          <a href="#contact" className={styles.button}>
             Get started
             <svg
               className="w-5 h-5 ml-2 -mr-1"

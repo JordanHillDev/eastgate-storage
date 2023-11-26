@@ -1,10 +1,10 @@
+import { NAV_HEIGHT } from "@/global/constants/navHeight";
+
 const styles = {
   section: `
   bg-background
   `,
-  container: `
-  py-8 
-  lg:py-16 
+  container: `  
   px-4 
   mx-auto 
   max-w-screen-md
@@ -68,7 +68,7 @@ const styles = {
 
 export default function Contact() {
   return (
-    <section className={styles.section} id="contact">
+    <section id="contact" className={styles.section} style={{ paddingTop: NAV_HEIGHT }}>
       <div className={styles.container}>
         <h2 className={styles.header}>Contact Us</h2>
         <p className={styles.subheader}>

@@ -1,3 +1,4 @@
+import { NAV_HEIGHT } from "@/global/constants/navHeight";
 import { Map } from "../map";
 
 const openHours = [
@@ -17,8 +18,7 @@ const styles = {
   md:max-w-screen-md
   lg:max-w-screen-xl
   px-6 
-  py-6
-  md:py-40`,
+  `,
   grid: `
   grid 
   max-w-screen-xl
@@ -45,7 +45,7 @@ const styles = {
 
 export default function Location() {
   return (
-    <section className={styles.section} id="location">
+    <section id="location" className={styles.section} style={{ paddingTop: NAV_HEIGHT }}>
       <div className={styles.grid}>
         <div className={styles.map}>
           <Map />
