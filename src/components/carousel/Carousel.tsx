@@ -27,8 +27,8 @@ const styles = {
   justify-center 
   w-10 h-10 
   rounded-full 
-  bg-white/30 
-  group-hover:bg-white/50 
+  bg-primary_dark/60 
+  group-hover:bg-primary/50 
   group-focus:ring-4 
   group-focus:ring-white 
   group-focus:outline-none`,
