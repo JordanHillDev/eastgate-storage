@@ -72,8 +72,8 @@ export default function Contact() {
       <div className={styles.container}>
         <h2 className={styles.header}>Contact Us</h2>
         <p className={styles.subheader}>
-          Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let
-          us know.
+          Ready to experience the convenience and security of Eastgate Storage Units? Contact us today to reserve your
+          unit and discover a storage solution that fits your lifestyle.
         </p>
         <form name="contact" method="POST" data-netlify="true" className="space-y-8" action="/">
           <input type="hidden" name="form-name" value="contact" />

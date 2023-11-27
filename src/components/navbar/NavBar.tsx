@@ -6,11 +6,9 @@ import { NAV_HEIGHT } from "@/global/constants/navHeight";
 
 const styles = {
   nav: `
-  bg-white
+  bg-text_primary
   fixed 
   w-full
-  
-  px-4 
   z-20 
   top-0 
   left-0 
@@ -18,6 +16,7 @@ const styles = {
   border-gray-200`,
   navContainer: `
   max-w-screen-xl 
+  bg-text_primary
   flex 
   flex-wrap 
   items-center 
@@ -47,7 +46,7 @@ const styles = {
   mt-4 
   font-medium 
   border 
-  border-gray-100 
+  border-text_secondary
   rounded-lg 
   md:flex-row 
   md:space-x-8 
@@ -66,7 +65,8 @@ const styles = {
   hamburger: `
   inline-flex 
   items-center 
-  p-2 
+  p-2
+  mr-4 
   w-10 
   h-10 
   justify-center 
@@ -80,9 +80,10 @@ const styles = {
   focus:ring-gray-200 
   `,
   dropdown: `
-  items-center 
+  items-center
   justify-between 
-  w-full md:flex 
+  w-full
+  md:flex 
   md:w-auto 
   md:order-1" 
   id="navbar-sticky`,
@@ -120,7 +121,7 @@ export default function NavBar() {
     <nav className={styles.nav} style={{ height: NAV_HEIGHT }}>
       <div className={styles.navContainer}>
         <a href="/">
-          <Image alt="Eastgate Storage Logo" src={eastgateLogo} width={150} />
+          <Image alt="Eastgate Storage Logo" src={eastgateLogo} width={150} className="ml-4" />
         </a>
         <div className="flex md:order-2">
           {/* <button type="button" className={styles.button}>

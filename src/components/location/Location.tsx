@@ -63,7 +63,7 @@ export default function Location() {
             <span itemProp="postalCode">37862</span>
           </p>
           <a
-            href="tel:+18655910610"
+            href="tel:+18653651798"
             itemProp="telephone"
             className="text-primary_light text-sm hover:text-text_primary"
           >

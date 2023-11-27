@@ -6,6 +6,7 @@ const styles = {
   hero: `
   bg-background 
   pt-0
+  lg:w-full
   `,
   grid: `
   grid 
@@ -18,6 +19,7 @@ const styles = {
   lg:grid-cols-12
   `,
   textContainer: `
+  col-span-5
   mr-auto
   px-4
   md:px-0
@@ -67,7 +69,7 @@ const styles = {
   dark:focus:ring-primary-900
   `,
   carousel: `
-  lg:mt-0 
+  lg:mt-0
   col-span-5
   order-first
   lg:order-last
