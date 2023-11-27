@@ -49,7 +49,7 @@ const styles = {
   items-center 
   space-x-3`,
   mostPopular: `
-  bg-primary_light 
+  bg-primary 
   rounded-t
   font-semibold
   mb-2
@@ -61,7 +61,7 @@ const styles = {
 
 export default function PricingCard({ option }: PricingCardProps) {
   return (
-    <div className={`${styles.container} ${option.mostPopular ? "border-primary_light" : "border-gray-400"}`}>
+    <div className={`${styles.container} ${option.mostPopular ? "border-primary" : "border-gray-400"}`}>
       {option.mostPopular && (
         <div className={styles.mostPopular}>
           <h1>Most Popular</h1>

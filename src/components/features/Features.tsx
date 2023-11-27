@@ -78,11 +78,7 @@ export default function Features() {
             We understand that life comes with its fair share of transitions and changes
           </h2>
           <p className={styles.subheader}>
-            And sometimes, you need a little extra space to accomodate those shifts. That's where we come in - providing
-            you with a <span className={styles.highlighted}>reliable</span>,{" "}
-            <span className={styles.highlighted}>secure</span>, and{" "}
-            <span className={styles.highlighted}>convenient</span> self-storage facility that caters to all your storage
-            needs.
+            And sometimes, you need a little extra space to accomodate those shifts. That's where we come in.
           </p>
         </div>
         <div className={styles.featuresGrid}>
@@ -181,7 +177,7 @@ export default function Features() {
             </div>
             <h3 className={styles.featureTitle}>Flexible Size Options and Affordable Plans</h3>
             <p className={styles.featureDescription}>
-              We understand that one size doesn't fit all when it comes to storage. That's why we offer four differnt
+              We understand that one size doesn't fit all when it comes to storage. That's why we offer four different
               size options to accomodate your varying needs. From small units for a few boxes to larger spaces for
               furniture and more, we have the perfect size for you. Our affordable monthly plans ensure that you get the
               storage you need without breaking the bank.
