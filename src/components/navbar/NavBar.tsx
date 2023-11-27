@@ -121,7 +121,7 @@ export default function NavBar() {
     <nav className={styles.nav} style={{ height: NAV_HEIGHT }}>
       <div className={styles.navContainer}>
         <a href="/">
-          <Image alt="Eastgate Storage Logo" src={eastgateLogo} width={150} className="ml-4" />
+          <Image alt="Eastgate Storage Logo" src={eastgateLogo} width={150} className="ml-4" priority />
         </a>
         <div className="flex md:order-2">
           {/* <button type="button" className={styles.button}>
@@ -165,13 +165,13 @@ export default function NavBar() {
               </a>
             </li>
             <li>
-              <a href="#location" className={styles.navLink}>
-                Location
+              <a href="#contact" className={styles.navLink}>
+                Contact
               </a>
             </li>
             <li>
-              <a href="#contact" className={styles.navLink}>
-                Contact
+              <a href="#location" className={styles.navLink}>
+                Location
               </a>
             </li>
           </ul>

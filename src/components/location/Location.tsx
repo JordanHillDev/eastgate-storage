@@ -19,17 +19,25 @@ const styles = {
   lg:max-w-screen-xl
   px-6 
   `,
+  header: `
+  mb-4 
+  text-4xl 
+  tracking-tight 
+  font-extrabold 
+  text-text_primary 
+  `,
   grid: `
   grid 
   max-w-screen-xl
   mx-auto
-  px-4 
+  
   py-8 
   gap-8
   md:grid-cols-12`,
   map: ` 
   col-span-7
-  h-[300px]`,
+  h-[200px]
+  md:h-[400px]`,
   address: `
   col-span-5
   text-4xl 
@@ -46,6 +54,7 @@ const styles = {
 export default function Location() {
   return (
     <section id="location" className={styles.section} style={{ paddingTop: NAV_HEIGHT }}>
+      <h2 className={styles.header}>Location</h2>
       <div className={styles.grid}>
         <div className={styles.map}>
           <Map />
