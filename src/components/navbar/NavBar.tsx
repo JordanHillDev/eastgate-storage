@@ -23,21 +23,6 @@ const styles = {
   justify-between 
   mx-auto 
   p-1`,
-  button: `
-  text-white 
-  bg-primary 
-  hover:bg-primary_dark
-  focus:ring-4 
-  focus:outline-none 
-  focus:ring-primary_light 
-  font-medium 
-  rounded-lg 
-  text-sm 
-  px-4 
-  py-2 
-  text-center
-  mr-3 
-  md:mr-0`,
   navList: `
   flex 
   flex-col 
@@ -124,9 +109,6 @@ export default function NavBar() {
           <Image alt="Eastgate Storage Logo" src={eastgateLogo} width={150} className="ml-4" priority />
         </a>
         <div className="flex md:order-2">
-          {/* <button type="button" className={styles.button}>
-            Call Now
-          </button> */}
           <button
             type="button"
             className={styles.hamburger}
@@ -155,22 +137,22 @@ export default function NavBar() {
         <div className={`${styles.dropdown} ${dropdownShowing ? "" : "hidden"}`} ref={navRef}>
           <ul className={styles.navList}>
             <li>
-              <a href="#home" className={styles.navLink} aria-current="page">
+              <a href="/" className={styles.navLink} aria-current="page">
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className={styles.navLink}>
+              <a href="/#about" className={styles.navLink}>
                 About
               </a>
             </li>
             <li>
-              <a href="#contact" className={styles.navLink}>
+              <a href="/#contact" className={styles.navLink}>
                 Contact
               </a>
             </li>
             <li>
-              <a href="#location" className={styles.navLink}>
+              <a href="/#location" className={styles.navLink}>
                 Location
               </a>
             </li>

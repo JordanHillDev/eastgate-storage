@@ -1,7 +1,6 @@
-import storage1 from "public/images/adam-winger-FJTz_ASf_BI-unsplash.jpg";
-import storage2 from "public/images/joshua-coleman-ZVkDLrXGMdw-unsplash.jpg";
-import storage3 from "public/images/steve-johnson-S0j-5wSN3YQ-unsplash.jpg";
-import storage4 from "public/images/storage1.jpg";
+import storageNight from "public/images/storageNight.jpeg";
+import storageDay from "public/images/storageDay.jpg";
+import storageCar from "public/images/storageCar.jpeg";
 
 import type { StaticImageData } from "next/image";
 
@@ -12,19 +11,15 @@ export type CarouselImage = {
 
 export const carouselImages: CarouselImage[] = [
   {
-    img: storage1,
-    alt: "Storage Unit",
+    img: storageDay,
+    alt: "Storage units during the day",
   },
   {
-    img: storage2,
-    alt: "Storage Unit",
+    img: storageCar,
+    alt: "Car inside storage unit",
   },
   {
-    img: storage3,
-    alt: "Storage Unit",
-  },
-  {
-    img: storage4,
-    alt: "Storage Unit",
+    img: storageNight,
+    alt: "Storage units during the night",
   },
 ];
