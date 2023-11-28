@@ -75,7 +75,7 @@ export default function Contact() {
           Ready to experience the convenience and security of Eastgate Storage Units? Contact us today to reserve your
           unit and discover a storage solution that fits your lifestyle.
         </p>
-        <form name="contact" method="POST" data-netlify="true" className="space-y-8" action="/">
+        <form name="contact" method="POST" data-netlify="true" className="space-y-8" action="/success">
           <input type="hidden" name="form-name" value="contact" />
           <div>
             <label htmlFor="name" className={styles.formLabel}>
