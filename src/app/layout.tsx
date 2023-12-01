@@ -13,6 +13,22 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="
+                  default-src 'self' https://www.google.com;
+                  script-src 'self' www.google.com maps.googleapis.com 'unsafe-inline' 'unsafe-eval';
+                  style-src 'self' 'unsafe-inline';
+                  img-src 'self' data: maps.gstatic.com www.google-analytics.com;
+                  font-src 'self';
+                  connect-src 'self' www.google-analytics.com;
+              "
+        />
+      </head>
+
       <body className={inter.className}>
         <NavBar />
         {children}

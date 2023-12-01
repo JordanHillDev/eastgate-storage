@@ -5,6 +5,7 @@ export default function Map() {
       className="w-full h-full max-w-2xl"
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
+      title="Eastgate Storage Location"
     ></iframe>
   );
 }

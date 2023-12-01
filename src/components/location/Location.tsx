@@ -2,13 +2,13 @@ import { NAV_HEIGHT } from "@/global/constants/navHeight";
 import { Map } from "../map";
 
 const openHours = [
-  { day: "Monday", opens: "7:30 AM", closes: "8:30 PM" },
-  { day: "Tuesday", opens: "7:30 AM", closes: "8:30 PM" },
-  { day: "Wednesday", opens: "7:30 AM", closes: "8:30 PM" },
-  { day: "Thursday", opens: "7:30 AM", closes: "8:30 PM" },
-  { day: "Friday", opens: "7:30 AM", closes: "8:30 PM" },
-  { day: "Saturday", opens: "7:30 AM", closes: "8:30 PM" },
-  { day: "Sunday", opens: "7:30 AM", closes: "8:30 PM" },
+  { day: "Monday", opens: "7:00 AM", closes: "8:30 PM" },
+  { day: "Tuesday", opens: "7:00 AM", closes: "8:30 PM" },
+  { day: "Wednesday", opens: "7:00 AM", closes: "8:30 PM" },
+  { day: "Thursday", opens: "7:00 AM", closes: "8:30 PM" },
+  { day: "Friday", opens: "7:00 AM", closes: "8:30 PM" },
+  { day: "Saturday", opens: "7:00 AM", closes: "8:30 PM" },
+  { day: "Sunday", opens: "7:00 AM", closes: "8:30 PM" },
 ];
 
 const styles = {
@@ -30,7 +30,6 @@ const styles = {
   grid 
   max-w-screen-xl
   mx-auto
-  
   py-8 
   gap-8
   md:grid-cols-12`,
