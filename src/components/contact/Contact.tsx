@@ -82,19 +82,19 @@ export default function Contact() {
             <label htmlFor="name" className={styles.formLabel}>
               Name
             </label>
-            <input type="name" name="name" id="name" className={styles.formInput} required autoComplete="name" />
+            <input type="name" name="Name" id="name" className={styles.formInput} required autoComplete="name" />
           </div>
           <div>
             <label htmlFor="email" className={styles.formLabel}>
               Email
             </label>
-            <input type="email" name="email" id="email" className={styles.formInput} required autoComplete="email" />
+            <input type="email" name="Email" id="email" className={styles.formInput} required autoComplete="email" />
           </div>
           <div>
             <label htmlFor="phoneNumber" className={styles.formLabel}>
               Phone Number
             </label>
-            <input type="text" name="phoneNumber" id="phoneNumber" className={styles.formInput} required />
+            <input type="text" name="Phone Number" id="phoneNumber" className={styles.formInput} required />
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="message" className={styles.formLabel}>
