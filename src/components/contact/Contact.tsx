@@ -77,7 +77,6 @@ export default function Contact() {
         </p>
         <form name="contact" method="POST" data-netlify="true" className="space-y-8" action="/success">
           <input type="hidden" name="form-name" value="contact" />
-          <input type="hidden" name="subject" value="New Contact Submission from Eastgate Storage" />
           <div>
             <label htmlFor="name" className={styles.formLabel}>
               Name
