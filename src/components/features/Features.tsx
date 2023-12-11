@@ -1,3 +1,4 @@
+import { Prices } from "../prices";
 import { NAV_HEIGHT } from "@/global/constants/navHeight";
 
 const styles = {
@@ -19,7 +20,7 @@ const styles = {
   `,
   header: `
   mb-4 
-  text-4xl 
+  text-3xl 
   tracking-tight 
   font-extrabold 
   text-text_primary 
@@ -157,34 +158,9 @@ export default function Features() {
               roll-up doors make accessing your belongings quick and easy.
             </p>
           </div>
-          <div>
-            <div className={styles.iconContainer}>
-              <svg
-                className={styles.icon}
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 11 20"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1.75 15.363a4.954 4.954 0 0 0 2.638 1.574c2.345.572 4.653-.434 5.155-2.247.502-1.813-1.313-3.79-3.657-4.364-2.344-.574-4.16-2.551-3.658-4.364.502-1.813 2.81-2.818 5.155-2.246A4.97 4.97 0 0 1 10 5.264M6 17.097v1.82m0-17.5v2.138"
-                />
-              </svg>
-            </div>
-            <h3 className={styles.featureTitle}>Flexible Size Options and Affordable Plans</h3>
-            <p className={styles.featureDescription}>
-              We understand that one size doesn't fit all when it comes to storage. That's why we offer four different
-              size options to accomodate your varying needs. From small units for a few boxes to larger spaces for
-              furniture and more, we have the perfect size for you. Our affordable monthly plans ensure that you get the
-              storage you need without breaking the bank.
-            </p>
-          </div>
         </div>
       </div>
+      <Prices />
     </section>
   );
 }

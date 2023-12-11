@@ -11,7 +11,7 @@ const styles = {
   `,
   header: `
   mb-4 
-  text-4xl 
+  text-3xl 
   tracking-tight 
   font-extrabold 
   text-center 
