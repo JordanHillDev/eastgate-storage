@@ -1,25 +1,19 @@
-import storageNight from "public/images/storageNight.jpeg";
-import storageDay from "public/images/storageDay.jpg";
-import storageCar from "public/images/storageCar.jpeg";
-
-import type { StaticImageData } from "next/image";
-
 export type CarouselImage = {
-  img: StaticImageData;
+  img: string;
   alt: string;
 };
 
 export const carouselImages: CarouselImage[] = [
   {
-    img: storageDay,
+    img: "/images/storageDay.jpg",
     alt: "Storage units during the day",
   },
   {
-    img: storageCar,
+    img: "/images/storageCar.jpeg",
     alt: "Car inside storage unit",
   },
   {
-    img: storageNight,
+    img: "/images/storageNight.jpeg",
     alt: "Storage units during the night",
   },
 ];

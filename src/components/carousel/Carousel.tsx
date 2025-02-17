@@ -62,8 +62,8 @@ export default function Carousel({ images }: CarouselProps) {
               if (i === currSlide) {
                 return (
                   <Image
-                    key={ea.img.src}
-                    src={ea.img.src}
+                    key={ea.img}
+                    src={ea.img}
                     className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
                     alt={ea.alt}
                     height={200}
