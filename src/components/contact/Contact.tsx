@@ -1,4 +1,7 @@
+"use client";
+
 import { NAV_HEIGHT } from "@/global/constants/navHeight";
+import { useRouter } from "next/navigation";
 
 const styles = {
   section: `
@@ -67,6 +70,27 @@ const styles = {
 };
 
 export default function Contact() {
+  const router = useRouter();
+
+  const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    try {
+      const formData = new FormData(event.currentTarget);
+
+      const res = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+      if (res.ok) {
+        router.push("/success");
+        console.log("yay success");
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
   return (
     <section id="contact" className={styles.section} style={{ paddingTop: NAV_HEIGHT }}>
       <div className={styles.container}>
@@ -75,25 +99,25 @@ export default function Contact() {
           Ready to experience the convenience and security of Eastgate Storage Units? Contact us today to reserve your
           unit and discover a storage solution that fits your lifestyle.
         </p>
-        <form name="contact" method="POST" data-netlify="true" className="space-y-8" action="/success">
+        <form name="contact" className="space-y-8" onSubmit={handleFormSubmit}>
           <input type="hidden" name="form-name" value="contact" />
           <div>
             <label htmlFor="name" className={styles.formLabel}>
               Name
             </label>
-            <input type="name" name="Name" id="name" className={styles.formInput} required autoComplete="name" />
+            <input type="text" name="name" id="name" className={styles.formInput} required autoComplete="name" />
           </div>
           <div>
             <label htmlFor="email" className={styles.formLabel}>
               Email
             </label>
-            <input type="email" name="Email" id="email" className={styles.formInput} required autoComplete="email" />
+            <input type="email" name="email" id="email" className={styles.formInput} required autoComplete="email" />
           </div>
           <div>
             <label htmlFor="phoneNumber" className={styles.formLabel}>
               Phone Number
             </label>
-            <input type="text" name="Phone Number" id="phoneNumber" className={styles.formInput} required />
+            <input type="text" name="phoneNumber" id="phoneNumber" className={styles.formInput} required />
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="message" className={styles.formLabel}>
@@ -101,7 +125,7 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
-              name="Message"
+              name="message"
               rows={6}
               className={styles.formInput}
               placeholder="Let us know how we can help"
