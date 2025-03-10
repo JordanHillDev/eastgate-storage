@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-import eastgateLogo from "/public/eastgateLogo1.png";
 import { NAV_HEIGHT } from "@/global/constants/navHeight";
 
 const styles = {
@@ -106,7 +105,14 @@ export default function NavBar() {
     <nav className={styles.nav} style={{ height: NAV_HEIGHT }}>
       <div className={styles.navContainer}>
         <a href="/">
-          <Image alt="Eastgate Storage Logo" src={eastgateLogo} width={150} className="ml-4" priority />
+          <Image
+            alt="Eastgate Storage Logo"
+            src="/images/eastgateLogo1.png"
+            width={150}
+            height={80}
+            className="ml-4"
+            priority
+          />
         </a>
         <div className="flex md:order-2">
           <button
